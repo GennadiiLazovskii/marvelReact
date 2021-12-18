@@ -39,6 +39,7 @@ const ComicsList = () => {
 
     function renderItems (arr) {
         const items = arr.map((item, i) => {
+          console.log(item);
             return (
                 <li className="comics__item" key={i}>
                     <Link to={`/comics/${item.id}`}>
