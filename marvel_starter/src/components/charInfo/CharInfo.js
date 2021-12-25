@@ -12,7 +12,7 @@ const CharInfo = (props) => {
 
   const [char, setChar] = useState(null);
 
-  const {loading, error, getCharacter, clearError, process, setProcess} = useMarvelService();
+  const {getCharacter, clearError, process, setProcess} = useMarvelService();
 
 
   useEffect(() => {
@@ -76,7 +76,7 @@ const View = ({data}) => {
 
               {
                 comics.map((item, i) => {
-                  // eslint-disable-next-line
+
                   if (i > 9) return;
                   return (
                     <li key={i} className="char__comics-item">
